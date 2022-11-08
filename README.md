@@ -1,9 +1,9 @@
 `krust` is a [k-mer](https://en.wikipedia.org/wiki/K-mer) counter--a bioinformatics 101 tool for counting the frequency of substrings of length `k` within strings of DNA data. It's written in Rust and run from the command line. It takes a fasta file of DNA sequences and will output all canonical k-mers (the double helix means each k-mer has a [reverse complement](https://en.wikipedia.org/wiki/Complementarity_(molecular_biology)#DNA_and_RNA_base_pair_complementarity)) and their frequency across all records in the given fasta file. 
 
 Run `krust` on the test data* in the [`krust` Github repo](https://github.com/suchapalaver/krust), searching for kmers of length 5, like this:  
-```$ cargo run --release 5 cerevisae.pan.fa > output.tsv```  
+```$ cargo run --release 5 cerevisiae.pan.fa > output.tsv```  
 or, searching for kmers of length 21:  
-```$ cargo run --release 21 cerevisae.pan.fa > output.tsv``` 
+```$ cargo run --release 21 cerevisiae.pan.fa > output.tsv``` 
 
 `krust` prints to `stdout`, writing, on alternate lines:  
 ```>{frequency}```  
